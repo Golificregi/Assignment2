@@ -118,7 +118,15 @@ function printInt(n) {
   // 		// simpleReverse(‘I Love Code’) ======> ‘edoC evoL I’
   
   // Hint: Think of how you can loop through a string or array of characters backwards to produce a new string
-  
+  function simpleReverse(str) {
+    var reversed = " ";
+    for(var i = str.length - 1; i >= 0; i--) {
+      reversed = reversed += str[i];
+    }
+    console.log(reversed);
+  }
+
+
   //Q7 Write the function findDiff(arr) taking an array of numbers as parameter and return the difference between the maximum number and the minimum number (max - min). 
   // 	Examples:
   // 	findDiff([1,2,4,6,20, 3]) =======> 19 (Because 20 - 1 = 19)
